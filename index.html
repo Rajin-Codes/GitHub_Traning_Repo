@@ -3,11 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Northstar helps small teams turn good ideas into focused work.">
+    <title>Northstar | Make room for better work</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>Hello world</h1>
-    <p>This is a sample html</p>
+<body class="bg-[#f7f5ef] text-[#17251f] antialiased">
+    <header class="mx-auto flex max-w-6xl items-center justify-between px-6 py-6 lg:px-8">
+        <a class="font-display text-xl font-bold tracking-tight" href="#top" aria-label="Northstar home">
+            north<span class="text-[#e26d3d]">star</span><span class="text-[#e26d3d]">.</span>
+        </a>
+
+        <button id="menu-button" class="rounded-full border border-[#d5d8cc] p-2.5 lg:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle navigation">
+            <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" d="M4 6h16M4 12h16M4 18h16" /></svg>
+        </button>
+
+        <nav class="hidden items-center gap-8 text-sm font-semibold lg:flex" aria-label="Main navigation">
+            <a class="nav-link" href="#approach">Approach</a>
+            <a class="nav-link" href="#stories">Stories</a>
+            <a class="nav-link" href="#contact">Contact</a>
+            <a class="rounded-full bg-[#17251f] px-5 py-3 text-white transition hover:bg-[#e26d3d]" href="#contact">Start a conversation <span aria-hidden="true">↗</span></a>
+        </nav>
+    </header>
+
+    <nav id="mobile-menu" class="mx-6 hidden rounded-2xl border border-[#d5d8cc] bg-white p-5 lg:hidden" aria-label="Mobile navigation">
+        <div class="flex flex-col gap-4 text-sm font-semibold">
+            <a href="#approach">Approach</a>
+            <a href="#stories">Stories</a>
+            <a href="#contact">Contact</a>
+            <a class="text-[#e26d3d]" href="#contact">Start a conversation <span aria-hidden="true">↗</span></a>
+        </div>
+    </nav>
+
+    <main id="top">
+        <section class="mx-auto grid max-w-6xl gap-12 px-6 pb-20 pt-16 lg:grid-cols-[1.1fr_.9fr] lg:items-end lg:px-8 lg:pb-28 lg:pt-24">
+            <div class="reveal">
+                <p class="mb-6 text-xs font-bold uppercase tracking-[0.24em] text-[#e26d3d]">Independent digital studio</p>
+                <h1 class="font-display max-w-3xl text-5xl font-bold leading-[0.98] tracking-[-0.05em] sm:text-7xl lg:text-[6.5rem]">Make room for <span class="text-[#e26d3d]">better</span> work.</h1>
+            </div>
+            <div class="reveal max-w-md lg:pb-2">
+                <p class="mb-8 text-lg leading-8 text-[#58635b]">Northstar helps thoughtful teams find clarity, build momentum, and make useful things people remember.</p>
+                <a class="group inline-flex items-center gap-3 font-semibold" href="#approach">Explore our approach <span class="flex h-9 w-9 items-center justify-center rounded-full bg-[#e26d3d] text-white transition group-hover:translate-x-1">↘</span></a>
+            </div>
+        </section>
+
+        <section class="mx-6 overflow-hidden rounded-[2rem] bg-[#17251f] lg:mx-auto lg:max-w-6xl" aria-label="Featured project">
+            <div class="grid min-h-[28rem] items-end bg-[radial-gradient(circle_at_72%_28%,#f4b86b_0,transparent_23%),linear-gradient(125deg,#263d31_0%,#17251f_56%,#0e1713_100%)] p-8 sm:p-12 lg:grid-cols-[1fr_auto] lg:p-16">
+                <div class="reveal">
+                    <p class="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-[#f4b86b]">Featured project / 01</p>
+                    <h2 class="font-display max-w-xl text-4xl font-semibold leading-tight tracking-[-0.04em] text-[#f7f5ef] sm:text-6xl">A calmer way to move forward.</h2>
+                </div>
+                <div class="mt-10 flex items-end justify-between gap-8 lg:mt-0 lg:flex-col lg:items-end">
+                    <span class="text-sm text-[#c4cec3]">Strategy · Brand · Digital</span>
+                    <span class="flex h-14 w-14 items-center justify-center rounded-full border border-[#c4cec3]/40 text-2xl text-[#f7f5ef]">↗</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="approach" class="mx-auto max-w-6xl px-6 py-24 lg:px-8 lg:py-32">
+            <div class="mb-14 flex flex-col justify-between gap-5 border-b border-[#d5d8cc] pb-8 sm:flex-row sm:items-end">
+                <div><p class="mb-3 text-xs font-bold uppercase tracking-[0.24em] text-[#e26d3d]">The Northstar method</p><h2 class="font-display text-4xl font-bold tracking-[-0.04em] sm:text-5xl">Small moves. Real momentum.</h2></div>
+                <p class="max-w-xs text-sm leading-6 text-[#58635b]">Good work gets easier when everyone knows what matters next.</p>
+            </div>
+            <div class="grid gap-10 md:grid-cols-3">
+                <article class="reveal"><span class="number">01</span><h3 class="font-display mb-3 text-2xl font-semibold">Find the signal</h3><p class="leading-7 text-[#58635b]">We listen closely, ask the useful questions, and turn complexity into a clear direction.</p></article>
+                <article class="reveal"><span class="number">02</span><h3 class="font-display mb-3 text-2xl font-semibold">Shape the story</h3><p class="leading-7 text-[#58635b]">We make the strategy tangible through a distinct identity and an experience people can use.</p></article>
+                <article class="reveal"><span class="number">03</span><h3 class="font-display mb-3 text-2xl font-semibold">Keep it moving</h3><p class="leading-7 text-[#58635b]">We build practical systems that help your team keep creating long after launch day.</p></article>
+            </div>
+        </section>
+
+        <section id="stories" class="border-y border-[#d5d8cc] bg-[#ebe9df]">
+            <div class="mx-auto max-w-6xl px-6 py-20 lg:px-8 lg:py-24">
+                <p class="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-[#e26d3d]">A note from a partner</p>
+                <blockquote class="font-display max-w-4xl text-3xl font-semibold leading-tight tracking-[-0.03em] sm:text-5xl">“They helped us see the simple idea hiding inside the complicated one.”</blockquote>
+                <p class="mt-8 text-sm font-semibold">Maya Chen <span class="mx-2 text-[#e26d3d]">/</span> Founder, Fieldwork</p>
+            </div>
+        </section>
+
+        <section id="contact" class="mx-auto max-w-6xl px-6 py-24 lg:px-8 lg:py-32">
+            <div class="grid gap-12 lg:grid-cols-[.8fr_1.2fr]">
+                <div><p class="mb-4 text-xs font-bold uppercase tracking-[0.24em] text-[#e26d3d]">Have a good question?</p><h2 class="font-display text-5xl font-bold tracking-[-0.05em]">Let’s make it useful.</h2></div>
+                <form id="contact-form" class="grid gap-5" novalidate>
+                    <label class="sr-only" for="email">Your email address</label>
+                    <input id="email" class="input-field" type="email" placeholder="Your email address" required>
+                    <button class="flex items-center justify-between rounded-xl bg-[#e26d3d] px-5 py-4 font-semibold text-white transition hover:bg-[#17251f]" type="submit">Say hello <span aria-hidden="true">↗</span></button>
+                    <p id="form-message" class="hidden text-sm font-semibold" role="status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mx-auto flex max-w-6xl flex-col gap-4 border-t border-[#d5d8cc] px-6 py-8 text-sm text-[#58635b] sm:flex-row sm:items-center sm:justify-between lg:px-8">
+        <p class="font-display font-semibold text-[#17251f]">north<span class="text-[#e26d3d]">star</span>.</p><p>© 2026 Northstar Studio. Built with intention.</p>
+    </footer>
+
+    <script>
+        const menuButton = document.querySelector('#menu-button');
+        const mobileMenu = document.querySelector('#mobile-menu');
+        const contactForm = document.querySelector('#contact-form');
+        const formMessage = document.querySelector('#form-message');
+
+        menuButton.addEventListener('click', () => {
+            const isOpen = menuButton.getAttribute('aria-expanded') === 'true';
+            menuButton.setAttribute('aria-expanded', String(!isOpen));
+            mobileMenu.classList.toggle('hidden', isOpen);
+        });
+
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const email = document.querySelector('#email');
+            formMessage.classList.remove('hidden');
+            if (!email.validity.valid) {
+                formMessage.className = 'text-sm font-semibold text-red-700';
+                formMessage.textContent = 'Enter a valid email address to get in touch.';
+                email.focus();
+                return;
+            }
+            formMessage.className = 'text-sm font-semibold text-[#27704e]';
+            formMessage.textContent = 'Thanks. We will be in touch soon.';
+            contactForm.reset();
+        });
+    </script>
 </body>
 </html>

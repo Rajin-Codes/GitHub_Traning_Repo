@@ -1,3 +1,59 @@
-h1{
-    color: brown;
+body {
+    font-family: "DM Sans", sans-serif;
+}
+
+.font-display {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.nav-link {
+    transition: color 180ms ease;
+}
+
+.nav-link:hover {
+    color: #e26d3d;
+}
+
+.input-field {
+    width: 100%;
+    border: 1px solid #d5d8cc;
+    border-radius: 0.75rem;
+    background: transparent;
+    padding: 1rem 1.25rem;
+    outline: none;
+}
+
+.input-field:focus {
+    border-color: #e26d3d;
+    box-shadow: 0 0 0 3px rgb(226 109 61 / 15%);
+}
+
+.number {
+    display: block;
+    margin-bottom: 1.5rem;
+    color: #e26d3d;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.reveal {
+    animation: rise-in 700ms ease both;
+}
+
+@keyframes rise-in {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        animation: none;
+    }
 }
